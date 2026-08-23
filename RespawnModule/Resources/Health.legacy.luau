@@ -12,12 +12,15 @@ local Humanoid = Character:WaitForChild'Humanoid'
 
 while true do
 	while Humanoid.Health < Humanoid.MaxHealth do
-		local dt = wait(REGEN_STEP)
+		local dt = task.wait(REGEN_STEP)
 		local dh = dt*REGEN_RATE*Humanoid.MaxHealth
 		Humanoid.Health = math.min(Humanoid.Health + dh, Humanoid.MaxHealth)
 	end
 	Humanoid.HealthChanged:Wait()
 end
 
---[This is Basically the vanilla Health Regeneration script, this is here because my custom function to
---Load Characters needs to copy manually the scripts to the new models]
+--[[
+This is Basically the vanilla Health Regeneration script, this is here because my custom function to
+Load Characters needs to copy manually the scripts to the new models
+-Estebanjesus4
+]]
