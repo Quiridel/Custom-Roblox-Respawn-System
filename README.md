@@ -5,30 +5,37 @@ Custom Roblox Respawn System is a Luau module designed to replace Roblox's defau
 The system disables Roblox's automatic character loading and handles character creation and spawning manually.
 
 --Features
+
 -Custom character spawning
   Manually creates player characters.
   Supports R6 and R15 rigs.
   Supports Roblox avatar descriptions.
+
 -Custom respawning
   Custom respawn timing.
   Characters are preloaded before the respawn delay finishes when possible.
   Uses StarterPlayer settings where applicable.
+
 -SpawnLocation support
   Detects SpawnLocations automatically.
   Supports neutral spawns.
   Supports team-based spawns.
   Detects SpawnLocations added or removed during runtime.
   Supports spawn-on-touch.
+
 -Animation overrides
   Allows custom animation sets.
   Supports player-selected animations.
   Separate R6 and R15 animation configurations.
+
 -Collision groups
   Includes configurable player collision groups.
   Supports custom collision behavior between players and other objects.
   SpawnLocations receive their own collision group.
+
 -Dynamic configuration
   Several StarterPlayer properties are monitored and applied to newly created characters.
+
 -Client camera handling
   Includes a client-side camera setup module for custom character spawning.
 
@@ -63,10 +70,15 @@ The system automatically detects whether it is running on the server or client a
 When initialized on the server, the system:
 
 Disables Roblox's automatic character loading.
+
 Registers the configured collision groups.
+
 Scans the Workspace for SpawnLocations.
+
 Starts tracking SpawnLocation changes.
+
 Configures respawning for players.
+
 Creates their characters manually.
 
 On the client, the camera system is initialized instead.
