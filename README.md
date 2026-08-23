@@ -96,16 +96,16 @@ SpawnSetUp
 --Animation Overrides
 
 Animations.MyAnimationSet = {
-    IdleAnimation1 = 123456789,
-    IdleAnimation2 = 123456789,
-    WalkAnimation = 123456789,
-    RunAnimation = 123456789,
-    JumpAnimation = 123456789,
-    FallAnimation = 123456789,
-    ClimbAnimation = 123456789,
-    SwimAnimation = 123456789,
-    SwimIdleAnimation = 123456789,
-    SitAnimation = 123456789,
+  IdleAnimation1 = 123456789,
+  IdleAnimation2 = 123456789,
+  WalkAnimation = 123456789,
+  RunAnimation = 123456789,
+  JumpAnimation = 123456789,
+  FallAnimation = 123456789,
+  ClimbAnimation = 123456789,
+  SwimAnimation = 123456789,
+  SwimIdleAnimation = 123456789,
+  SitAnimation = 123456789,
 }
 
 You can create your own animation sets inside Overrides.luau and select them when creating characters.
